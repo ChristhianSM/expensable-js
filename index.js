@@ -1,6 +1,6 @@
 console.log("Index!");
 // Data store
-const expenses = [
+const initialExpenses = [
   {
     category: "Shopping",
     description: "Nintendo Switch", 
@@ -12,6 +12,10 @@ const expenses = [
     amount: 1200,
   }
 ]
+
+// Adicion localStorage
+const expensesFromLocalStorage = JSON.parse(localStorage.getItem("expenses"));
+const expenses = expensesFromLocalStorage || initialExpenses
 
 function createExpense(expense){
   // Create Elements
@@ -59,6 +63,7 @@ function deleteExpense(expense) {
   const index = expenses.indexOf(expense);
   expenses.splice(index, 1);
   renderExpenses(expenses);
+  localStorage.setItem("expenses", JSON.stringify(expenses));
 }
 
 // const expense = createExpense(expenses[0]);
