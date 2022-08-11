@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expenses App</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <h2>Expenses Tracker</h2>
+      <nav>
+        <ul class="navbar-links" role="list">
+          <li><a href="index.html">List Expenses</a></li>
+          <li><a href="new-expense.html">Add Expense</a></li>
+        </ul>
+      </nav>
+      <div class="navbar-icons js-navbar-menu">
+        <img src="./images/icons/menu.svg" class="navbar__menu-icon" />
+        <img src="./images/icons/close.svg" class="navbar__menu-icon-close" />
+      </div>
+    </div>
+  </header>
+  <main class="section">
+    <div class="container">
+      <ul role = "list" class="expenses js-expenses">
+        <!-- <li class="expense">
+          <div class="expense__detail">
+            <div>
+              <p class="heading--xs bold">Shopping</p>
+              <p class="content-sm gray-300">Iphone 14 </p>
+            </div>
+            <p class="content-xl bold">$1000</p>
+          </div>
+          <div class="expense__actions">
+            <a href="#">Delete</a>
+          </div>
+        </li> -->
+      </ul>
+      <a href="new-expense.html" class="block text-center">Add new expense</a>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>Codeable 2022</p>
+  </footer>
+  <script src="scripts/navbar.js"></script>
+  <script src="scripts/store.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
