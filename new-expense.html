@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expenses App</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container navbar">
+      <h2>Expenses Tracker</h2>
+      <nav>
+        <ul class="navbar-links" role="list">
+          <li><a href="index.html">List Expenses</a></li>
+          <li><a href="new-expense.html">Add Expense</a></li>
+        </ul>
+      </nav>
+      <div class="navbar-icons js-navbar-menu">
+        <img src="./images/icons/menu.svg" class="navbar__menu-icon" />
+        <img src="./images/icons/close.svg" class="navbar__menu-icon-close" />
+      </div>
+    </div>
+  </header>
+  <main class="section">
+    <div class="container">
+      <h1 class="heading-sm text-center mb-4">Add New Expense</h1>
+      <form action="#" class="flex flex-column gap-4">
+        <div class="input">
+          <label for="category" class="content-xs overline">Category</label>
+          <div class="input__container">
+            <input 
+              type="text"
+              placeholder=""
+              class="input__content"
+              id="category"
+              name="category"
+            >
+          </div>
+        </div>
+        <div class="input">
+          <label for="description" class="content-xs overline">Description</label>
+          <div class="input__container">
+            <input 
+              type="text"
+              placeholder=""
+              class="input__content"
+              id="description"
+              name="description"
+            >
+          </div>
+        </div>
+        <div class="input">
+          <label for="amount" class="content-xs overline">Amount</label>
+          <div class="input__container">
+            <input 
+              type="number"
+              placeholder=""
+              class="input__content"
+              id="amount"
+              name="amount"
+            >
+          </div>
+        </div>
+        <button type="submit" class="button button--primary button--lg full-width">Add Expense</button>
+      </form>
+    </div>
+  </main>
+  <footer class="footer">
+    <p>Codeable 2022</p>
+  </footer>
+  <script src="scripts/navbar.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
